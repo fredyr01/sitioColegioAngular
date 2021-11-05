@@ -9,6 +9,7 @@ import { PqrsComponent } from './pqrs/pqrs.component';
 import { ReseniaComponent } from './resenia/resenia.component';
 import { TrabajeConNosotrosComponent } from './trabaje-con-nosotros/trabaje-con-nosotros.component';
 import { InscripcionComponent } from './inscripcion/inscripcion.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InscripcionComponent } from './inscripcion/inscripcion.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

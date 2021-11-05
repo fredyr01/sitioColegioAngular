@@ -5,7 +5,7 @@
   <title>Sitio Colegio</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/img/icon-col.png">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/fontawesome/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -38,7 +38,7 @@
       <ul class="nav-linksc">
         <label for="close-btnc" class="btnc close-btnc"><i class="fas fa-times"></i></label>
         <li><a href="inicio" routerLink="inicio" >Inicio</a></li>
-        <li><a href="inicio#level">Educación</a></li>
+        <!-- <li><a href="inicio#level">Educación</a></li> -->
         <!-- <li>
           <a href="#" class="desktop-itemc">Dropdown Menu</a>
           <input type="checkbox" id="showDrop">
@@ -90,6 +90,7 @@
           </div>
         </li>
         <li><a href="contacto" routerLink="contacto">Contacto</a></li>
+        <li><a href="trabaje-con-nosotros" routerLink="trabaje-con-nosotros">Trabaje con nosotros</a></li>
         <li><a href="pqrs" routerLink="pqrs">P.Q.R.S.</a></li>
       </ul>
       <label for="menu-btnc" class="btnc menu-btnc"><i class="fas fa-bars"></i></label>
@@ -115,5 +116,24 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    (function () {
+    'use strict'; 
+    window.addEventListener('load', function () {
+       // Fetch all the forms we want to apply custom Bootstrap validation styles to
+       var forms = document.getElementsByClassName('needs-validation');
+       // Loop over them and prevent submission
+       var validation = Array.prototype.filter.call(forms, function (form) {
+         form.addEventListener('submit', function (event) {
+           if (form.checkValidity() === false) {
+             event.preventDefault();
+             event.stopPropagation();
+           }
+    form.classList.add('was-validated');
+        }, false);
+        });
+      }, false);
+      })();
+  </script>
 </body>
 </html>
