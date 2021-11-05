@@ -1,0 +1,10 @@
+<h2> Formulario registro </h2>
+<form [formGroup]="trabajeForm" (ngSubmit)="onSubmit()">
+  <label for="nombre"> Nombre:</label>
+  <input type="text" id="nombre" formControlName="nombre">
+
+  <label for="apellido"> Apellido:</label>
+  <input type="text" id="apellido" formControlName="apellido">
+
+  <button type="submit" [disabled]="!trabajeForm.valid">Enviar</button>
+</form>
